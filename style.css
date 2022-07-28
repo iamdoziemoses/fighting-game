@@ -1,0 +1,105 @@
+body {
+  background-color: bisque;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#p1 {
+  width: 80px;
+  height: 80px;
+}
+
+.p1Choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#result {
+  color: rgb(21, 21, 20);
+  font-size: 12px;
+}
+
+#p1Health {
+  font-size: 50px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#p2 {
+  width: 80px;
+  height: 80px;
+}
+
+.p2Choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#p2Health {
+  font-size: 50px;
+
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#attack,
+#play,
+#reset {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: rgb(20, 20, 15);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 16px;
+  cursor: pointer;
+}
+
+#heal {
+  background-color: rgb(20, 20, 15);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 16px;
+  cursor: pointer;
+}
+
+#attack,
+#play,
+#reset:hover,
+#heal:hover {
+  background-color: rgb(33, 33, 28);
+}
+
+#result {
+  font-size: 50px;
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  #play{
+    margin-top: 10px;
+  }
+}
